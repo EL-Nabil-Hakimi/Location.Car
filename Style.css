@@ -60,13 +60,12 @@ header{
 
 .Menu ul li{
     text-align: center;
-    padding: 20px 0px ;
+    padding: 20px 10px ;
     cursor: pointer;
     border-radius: 0px;
     color: white;
     text-transform: uppercase;
     transition: 0.6s ease;
-    width: 100px;
 
 }
 
@@ -96,11 +95,13 @@ header{
 
 main{
     background-color: rgb(241, 241, 254);
+    margin: auto;
+
 }
 .section1{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -207,7 +208,6 @@ main{
     padding: 10px 5px ;
 }
 
-
 .section3 article:hover{
     opacity: 1;
     background-color:rgb(33, 0, 162) ;
@@ -220,8 +220,9 @@ main{
     width: 70px;
     height: 70px;
     border-radius: 50px;
-    border: 3px solid black;
+    border: 2px solid rgb(33, 0, 162) ;
     box-shadow: 0px 0px 7px 3px;
+ 
 
 
 }
@@ -265,4 +266,293 @@ footer{
 footer h1{
     margin-bottom: 20px;
   
+}
+
+
+@media (min-width: 768px){
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        background-color: rgb(33, 0, 162);
+        padding: 0px;
+        width: 100%;
+        border-bottom: 2px rgb(0, 0, 0) solid;
+        border-radius: 0px 0px 5px 5px ;
+    }
+
+
+
+    
+.Logo{
+    color: white;
+    margin-bottom: 0px;
+    cursor: pointer;
+    text-align: center;
+    width: 20%;
+    border: none;
+ 
+
+    
+}
+
+.Logo h1{
+    margin-bottom: 0px;
+}
+.Logo span{
+    color: rgb(248, 248, 53);
+    font-size: 30px;
+    font-weight: 50;
+
+
+}
+
+.Menu{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 20px;
+
+}
+
+
+.Menu ul li{
+    text-align: center;
+    padding: 20px 25px ;
+    cursor: pointer;
+    border-radius: 0px;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+
+}
+
+.Menu ul li:hover{
+    color: black;
+    background-color: white;
+    border-bottom: rgb(255, 0, 0) solid 5px ;
+    font-weight: bolder;
+
+    
+}
+
+.Menu ul a{
+    text-decoration: none;
+
+}
+
+
+#Checked{
+    color: black;
+    background-color: white;
+    border-bottom: rgb(255, 0, 0) solid 5px ;
+    font-weight: bolder;
+
+}
+
+
+main{
+    background-color: rgb(241, 241, 254);
+    padding: 30px 30px  ;
+    width: 80%;
+
+}
+.section1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    border-bottom: none;
+
+}
+.section1 img{
+    width: 60% ;
+    height: 350px;    
+    border-radius:5px ;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 3px 3px 8px 2px ;
+
+
+}
+
+
+.section1 h1{
+    font-size: 40px;
+    margin-top: 30px;
+
+    
+}
+
+.section1 div{
+    margin-left: 50px;
+    box-shadow: 3px 3px 8px 2px ;
+    padding: 20px 20px ;
+    border-radius: 5px ;
+    background-color: white;
+}
+
+.section1 button{
+    margin-top: 30px ;
+    border: none;
+    padding: 20px 30px; 
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px ;
+    transition: 0.8s ease;
+    box-shadow: 3px 3px 8px 2px black;
+
+}
+
+.section1 button:hover{
+    background-color:rgb(33, 0, 162) ;
+    color: rgb(255, 255, 255);
+
+}
+
+
+.section1 span{
+    color: rgba(33, 0, 162);
+}
+
+
+.section2 {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 10px 20px;
+
+
+}
+
+
+.section2 p{
+    background-color: rgb(255, 255, 255);
+    font-size: 18px ;
+    text-align: justify;
+    margin: 10px 20px ;
+    padding: 15px 15px ;
+    box-shadow: 3px 3px 8px 2px ;
+    border-radius: 5px ;
+    transition: 0.8s ease;
+
+    
+}
+
+
+.section2 p:hover{
+    background-color:rgb(33, 0, 162) ;
+    color: white;
+
+}
+
+
+
+.section3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px ;
+
+}
+
+
+.section3 article{
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 7px 3px;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255) ;
+    margin: 10px 30px;
+    opacity: 0.9;
+    transition: 0.8s ease;
+    align-items: center;
+    padding: 10px 5px ;
+}
+
+
+.section3 article:hover{
+    opacity: 1;
+    background-color:rgb(33, 0, 162) ;
+    color: white;
+
+
+}
+.imagePrsn img{
+    margin: 0px 5px ;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 2px solid rgb(33, 0, 162) ;
+    box-shadow: 0px 0px 7px 3px;
+ 
+
+
+}
+
+
+.InfoPrsn{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.InfoPrsn h2{
+    border-bottom: 1px solid black;
+}
+
+
+#cmntr{
+    margin-bottom: 20px ;
+    font-size: 30px;
+    border-bottom: 1px solid rgb(33, 0, 162);
+    text-shadow: 0px 2px 2px black;
+    color: rgb(33, 0, 162);
+}
+
+
+footer{
+    background-color: rgb(57, 15, 227);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px ;
+    border-top: 2px rgb(0, 0, 0) solid;
+    border-radius: 5px 5px 0px 0px ;
+}
+
+
+footer h1{
+    margin-bottom: 20px;
+  
+}
+
+
+#cmnt2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}    
 }
