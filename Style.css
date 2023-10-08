@@ -13,7 +13,10 @@ header{
     background-color: rgb(33, 0, 162);
     padding-top: 20px;
     width: 100%;
+    border-bottom: 2px rgb(0, 0, 0) solid;
+    border-radius: 0px 0px 5px 5px ;
 }
+
 
 
 .Logo{
@@ -47,7 +50,7 @@ header{
 }
 
 .Menu ul{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -57,19 +60,20 @@ header{
 
 .Menu ul li{
     text-align: center;
-    padding: 20px 10px ;
+    padding: 20px 0px ;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0px;
     color: white;
     text-transform: uppercase;
     transition: 0.6s ease;
-    width: 75px;
+    width: 100px;
+
 }
 
 .Menu ul li:hover{
     color: black;
     background-color: white;
-    border-bottom: yellow solid 5px ;
+    border-bottom: rgb(255, 0, 0) solid 5px ;
     font-weight: bolder;
 
     
@@ -84,9 +88,14 @@ header{
 #Checked{
     color: black;
     background-color: white;
-    border-bottom: yellow solid 5px ;
+    border-bottom: rgb(255, 0, 0) solid 5px ;
     font-weight: bolder;
 
+}
+
+
+main{
+    background-color: rgb(241, 241, 254);
 }
 .section1{
     width: 100%;
@@ -117,18 +126,19 @@ header{
     border: none;
     padding: 20px 30px; 
     border-radius: 5px;
-    background-color: rgb(33, 0, 162);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 20px ;
-    transition: 0.6 ease;
+    transition: 0.8s ease;
     box-shadow: 3px 3px 8px 2px black;
 
 }
 
 .section1 button:hover{
-    background-color: rgb(57, 15, 227);
+    background-color:rgb(33, 0, 162) ;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -152,27 +162,25 @@ header{
 
 
 .section2 p{
-    background-color: rgb(246, 246, 105);
+    background-color: rgb(255, 255, 255);
     font-size: 18px ;
     text-align: justify;
     margin: 10px 20px ;
     padding: 15px 15px ;
     box-shadow: 3px 3px 8px 2px ;
     border-radius: 5px ;
+    transition: 0.8s ease;
 
     
 }
 
 
-footer{
-    background-color: rgb(57, 15, 227);
+.section2 p:hover{
+    background-color:rgb(33, 0, 162) ;
     color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 10px ;
+
 }
+
 
 
 .section3{
@@ -190,24 +198,30 @@ footer{
     justify-content: center;
     box-shadow: 0px 0px 7px 3px;
     border-radius: 5px;
-    background-color:rgb(246, 246, 105) ;
+    background-color:rgb(255, 255, 255) ;
     margin: 10px 30px;
     opacity: 0.9;
     transition: 0.8s ease;
+    align-items: center;
+    padding: 10px 5px ;
 }
 
 
 .section3 article:hover{
     opacity: 1;
-    background-color:rgb(225, 225, 69) ;
+    background-color:rgb(33, 0, 162) ;
+    color: white;
 
 
 }
 .imagePrsn img{
-    width: 100px;
-    height: 100px;
+    margin: 0px 5px ;
+    width: 70px;
+    height: 70px;
     border-radius: 50px;
     border: 3px solid black;
+    box-shadow: 0px 0px 7px 3px;
+
 
 }
 
@@ -229,4 +243,23 @@ footer{
     margin-bottom: 20px ;
     font-size: 30px;
     border-bottom: 1px solid black;
+}
+
+
+footer{
+    background-color: rgb(57, 15, 227);
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px ;
+    border-top: 2px rgb(0, 0, 0) solid;
+    border-radius: 5px 5px 0px 0px ;
+}
+
+
+footer h1{
+    margin-bottom: 20px;
+  
 }
